@@ -1,0 +1,33 @@
+#API call for display all questions 
+###
+GET http://127.0.0.1:8000/questions/
+accept : application/json
+
+# API call for new questions
+###
+POST http://127.0.0.1::8000/questions/
+Content-Type: application/json
+
+{
+  "title": "Factorial of a given number",
+  "language": "python",
+  "difficulty_level": "easy",
+  "topic": "Loops",
+  "notes": "This question is about calculating the factorial of a given number using loops.",
+  "sample_input": "5",
+  "sample_output": "120",
+  "is_active": true
+}
+
+POST http://127.0.0.1:8000/questions/
+    "notes": "This question is a...",
+    "sample_input": "7",
+    "sample_output": "true",
+    "is_active": true
+}
+
+###
+
+Send Request
+GET http://127.0.0.1:8000/questions/2/
+Accept: application/json
